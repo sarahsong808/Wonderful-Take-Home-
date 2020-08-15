@@ -1,14 +1,11 @@
 const express = require('express');
 const path = require('path');
 const app = express();
-const bodyParser = require("body-parser");
-const PORT = 3000;
 
-/**
- * handle parsing request body
- */
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: true }));
+const PORT = 3000;
+app.use(express.json()); //Used to parse JSON bodies
+app.use(express.urlencoded()); //Parse URL-encoded bodies
+// app.use(bodyParser.urlencoded({ extended: true }));
 
 app.use(express.static(path.join(__dirname, '../client/assets')));
 
