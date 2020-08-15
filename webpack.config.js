@@ -7,7 +7,7 @@ module.exports = {
   entry: [
     // entry point of our app
     "./client/index.js",
-    "./client/stylesheets/styles.css"
+    "./client/stylesheets/style.css"
   ],
   output: {
     path: path.resolve(__dirname, "dist"),
