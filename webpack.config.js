@@ -61,8 +61,14 @@ module.exports = {
         test: /.(css|scss)$/,
         exclude: /node_modules/,
         use: ["style-loader", "css-loader"]
+      },
+      {
+        test: /\.(png|jpg)$/,
+        use: {
+          loader: 'url-loader?limit=8192'
+        }
       }
-    ]
+    ],
   },
   plugins: [
     new HtmlWebpackPlugin({

@@ -1,3 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
 h1 {
     color: pink;
+}
+
+body {
+    background-color: #F7F7F7;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 50%;
+    font-family: sans-serif;
 }
