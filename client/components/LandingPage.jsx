@@ -1,6 +1,6 @@
 import React from 'react';
 import NavigationBar from './NavigationBar';
-// import './CarSlideshow'; 
+import CarSlideShow from './CarSlideshow'; 
 
 const LandingPage = props => {
     
@@ -8,6 +8,9 @@ const LandingPage = props => {
         <div>
             <div>
             <NavigationBar />
+            </div>
+            <div>
+            <CarSlideShow />
             </div>
             <h1>Landing Page</h1> 
         </div>
