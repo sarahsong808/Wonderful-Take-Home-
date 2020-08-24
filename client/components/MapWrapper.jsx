@@ -20,7 +20,7 @@ const dealerships = [{name: 'Brooklyn, NY', lat: 40.6782, long: -73.9442, id: 0}
 
 return(
     <div>
-        <h2>S E L E C T       Y O U R   D E A L E R S H I P</h2>
+        <h2><img src="https://cdn.onlinewebfonts.com/svg/img_56607.png" width="20" />S E L E C T       Y O U R   D E A L E R S H I P</h2>
         <p id="map-description">Using the map, below, click on the map marker that represents the nearest dealership to see all available LS trims</p>
 <div className='map-wrapper'>
     <MapDisplay dealerships={dealerships} setSelectedDealer={setSelectedDealer}/>
