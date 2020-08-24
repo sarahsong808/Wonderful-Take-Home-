@@ -14,8 +14,9 @@ const [selectedDealer, setSelectedDealer] = useState(1);
     - **Location 4:** A dealership in Plainfield, NJ - 0 trims available
     */
    //
-   const trims = {1: ['LS HYBRID', 'LS F SPORT', 'LS'], 2 : ['LS HYBRID', 'LS F SPORT', 'LS'], 3: ['LS HYBRID', 'LS'] }
-const dealerships = [{name: 'Brooklyn, NY', lat: 40.6782, long: -73.9442, id: 1}, {name: 'Brooklyn, NY', lat: 40.6782, long: -73.9442, id: 3}, {name: 'Queens, NY', lat: 40.7282, long: -73.7949, id: 2}]
+
+   const trims = {1: ['LS HYBRID', 'LS F SPORT', 'LS'], 2 : ['LS HYBRID', 'LS F SPORT', 'LS'], 3: ['LS F SPORT'], 4: [] }
+const dealerships = [{name: 'Brooklyn, NY', lat: 40.6782, long: -73.9442, id: 1}, {name: 'Queens, NY', lat: 40.7282, long: -73.7949, id: 2}, {name: 'Newark, NJ', lat: 40.7357, long: -74.1724, id: 3}, {name: 'Plainfield, NJ', lat: 40.6337, long: -74.4074, id: 4}]
 
 return(
 <div>
