@@ -13,10 +13,6 @@ const MapDisplay = ({dealerships, setSelectedDealer})=> {
 
     return (
           // Important! Always set the container height explicitly
-          <div>
-            <h2>SELECT YOUR DEALERSHIP</h2>
-    <p>Using the map, below, click on the map market that represents the nearest dealership to see all available LS trims</p>
-          </div>
       <div style={{ height: '70vh', width: '60%' }}>
       <GoogleMapReact
         // bootstrapURLKeys={{ key: /* YOUR KEY HERE */ }}
