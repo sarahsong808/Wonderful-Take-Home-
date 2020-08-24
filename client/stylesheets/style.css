@@ -23,3 +23,10 @@ body {
 .name {
     color: red;
 }
+
+.map-wrapper {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-bottom: 10%;
+}
