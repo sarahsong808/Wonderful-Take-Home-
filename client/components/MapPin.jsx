@@ -23,7 +23,7 @@ const MapPin = ({name, onClick}) => {
     return (
         <div> 
              <Wrapper
-    alt={name}
+    text={name}
     onClick={onClick}
   />
         </div>

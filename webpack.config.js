@@ -5,9 +5,8 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
   entry: [
-    // entry point of our app
+    // entry point of the app
     "./client/index.js",
-    "./client/stylesheets/style.css"
   ],
   output: {
     path: path.resolve(__dirname, "dist"),
@@ -58,9 +57,8 @@ module.exports = {
         }
       },
       {
-        test: /.(css|scss)$/,
-        exclude: /node_modules/,
-        use: ["style-loader", "css-loader"]
+        test: /\.css/,
+        loaders: ['style-loader', 'css-loader']
       },
       {
         test: /\.(png|jpg)$/,
