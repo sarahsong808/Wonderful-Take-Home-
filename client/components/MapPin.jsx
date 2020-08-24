@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import PropTypes from 'prop-types';
 
 const Wrapper = styled.div`
   position: absolute;
@@ -28,5 +29,14 @@ const MapPin = ({name, onClick}) => {
         </div>
     );
 }
+
+MapPin.defaultProps = {
+    onClick: null,
+  };
+  
+  MapPin.propTypes = {
+    onClick: PropTypes.func,
+    text: PropTypes.string.isRequired,
+  };
 
 export default MapPin;
