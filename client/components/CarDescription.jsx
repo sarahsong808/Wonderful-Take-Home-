@@ -4,8 +4,8 @@ import styled from 'styled-components';
 const Wrapper = styled.div`
 background-color: black; 
 opacity: 0.9;
-height: 23vh; 
-width: 13%;
+height: 40vh; 
+width: 22%;
 color: white;
 font-style: light;
 font-weight: 300;
@@ -33,7 +33,10 @@ font-size: 14px;
 font-weight: 300;
 
 `;
-const CarDescription = props => {
+const CarDescription = ({name, description}) => {
+
+    
+
 return(
     <div>
         <Wrapper>
@@ -41,10 +44,10 @@ return(
                 INTRODUCING THE NEW
             </Intro>
             <CarTitle>
-                2020 LS HYBRID
+                {name}
              </CarTitle>
             <CarSummary>
-                Built on the platform of the high-performance LS coupe, the LS 500 features our twin-turbocharged engine and offers meticulous craftsmanship like three premium wood-trim designs so unique they can take up to four months and 32 steps to complete
+                {description}
              </CarSummary>
         </Wrapper>
     </div>

@@ -9,7 +9,7 @@ const MapDisplay = ({dealerships, setSelectedDealer})=> {
     const [center, setCenter] = useState({lat: 40.730610, lng: -73.935242}); 
     const [zoom, setZoom] = useState(10);
 
-    const pins = dealerships.map(data => ( <MapPin name={data.name} lat={data.lat} lng={data.long} onClick={() => setSelectedDealer(data.id)}/>))
+    const pins = dealerships.map(data => ( <MapPin name={data.name} lat={data.lat} lng={data.long} onClick={() => setSelectedDealer(data.id)} key={data.id}/>))
 
     return (
           // Important! Always set the container height explicitly

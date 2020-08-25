@@ -36,7 +36,7 @@ MapPin.defaultProps = {
   
   MapPin.propTypes = {
     onClick: PropTypes.func,
-    text: PropTypes.string.isRequired,
+    name: PropTypes.string.isRequired,
   };
 
 export default MapPin;
