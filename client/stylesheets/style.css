@@ -53,12 +53,18 @@ tbody {
   font-weight: bold;
 }
 .map-wrapper {
-    display: grid;
     margin-bottom: 10%;
     max-width: 100%; 
     height: 70vh;
 }
+
+.map-wrapper:after {
+  content: "";
+  display: table;
+  clear: both;
+};
  /* Get rid of blue outline around carousel */
+
 *:focus {
     outline: none !important;
 }
@@ -264,13 +270,24 @@ padding: 110px 30px;
 }
 
 .available-car-container{
-  display: grid;
+  float: left;
+  padding: 10px;
 }
 
-.main-content {
-  grid-column: 2/6;
+.column {
+  float: left;
+  padding: 10px;
 }
 
-.sidebar {
-  grid-column: 6/8;
+.left {
+  width: 75%;
+}
+
+.right {
+  width: 25%;
+}
+
+.requested {
+  background-color: white;
+  color: black;
 }
