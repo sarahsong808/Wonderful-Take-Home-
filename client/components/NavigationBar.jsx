@@ -1,5 +1,6 @@
 import React from 'react';
-import logo from '../assets/Lexus.png'
+import logo from '../assets/Lexus.png';
+import User from './User';
 
 const NavigationBar = props => {
 return (
@@ -11,8 +12,9 @@ return (
         <div>HOME</div>
         <div>ABOUT</div>
         <div>CONTACT</div>
+        <User/>        
         </div>
-        </header>
+</header>
 )
 }
 

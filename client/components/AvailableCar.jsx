@@ -1,5 +1,4 @@
-import React from 'react'; 
-
+import React, {useState} from 'react'; 
 
 const AvailableCar = ({img, name, price}) => {
 // const trims = {0: ['LS HYBRID', 'LS F SPORT', 'LS'], 1 : ['LS HYBRID', 'LS F SPORT', 'LS'], 2: ['LS F SPORT'], 3: ['No Trims Available'] }
@@ -8,11 +7,11 @@ const AvailableCar = ({img, name, price}) => {
 
     const [carRequest, setCarRequest] = useState('')
     const [error, setError] = useState('');
-    
+const [clickedRequest, setClickRequest] = useState('REQUEST QUOTE');
     //typically we'd be grabbing the unique id specified by the API but because i created the dummy data, I'm just using the name
 
 
-// const requestQuote = name => {
+const requestQuote = name => {
 // fetch ('api', {
 //     method: 'POST', 
 //     headers: {
@@ -24,21 +23,35 @@ const AvailableCar = ({img, name, price}) => {
 
 // .catch(err => setError(err))
 // }
-// }
+setClickRequest('REQUESTED!')
+}
 
 return(
-        <div> 
+        <div className="available-car-container"> 
+            <span className="checkmark">
+            <div className="checkmark_circle"></div>
+            <div className="checkmark_stem"></div>
+            <div className="checkmark_kick"></div> 
+            </span>
             <div>
                 <img width="100" src={img}/> 
-            </div>
+            </div> 
             <div>
                 {name}
             </div>
+            
             <div>
                 STARTING AT ${price}
             </div>
-            <button onClick={()=>requestQuote()}>REQUEST QUOTE</button>
+            <button className={clickedRequest === 'REQUESTED!' ? "requested" : ""} onClick={()=>requestQuote()}>
+                {clickedRequest}
+            </button>
+            <div>
+                ___________________________________________
+            </div>
+
         </div>
+        
     ); 
 }
 

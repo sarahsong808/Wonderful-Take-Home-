@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import NavigationBar from './NavigationBar';
 import CarouselWrapper from './CarouselWrapper';
 import MapWrapper from './MapWrapper';

@@ -33,6 +33,13 @@ font-size: 14px;
 font-weight: 300;
 
 `;
+const DotToggle = styled.div`
+height: 25px;
+  width: 25px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  `;
 const CarDescription = ({name, description}) => {
 
     
@@ -49,6 +56,9 @@ return(
             <CarSummary>
                 {description}
              </CarSummary>
+             <span class="dot"></span>
+<span class="dot"></span>
+<span class="dot"></span>
         </Wrapper>
     </div>
 )

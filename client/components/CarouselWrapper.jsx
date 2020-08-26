@@ -7,6 +7,7 @@ const CarouselWrapper = props => {
     return (
         <div>
            <CarSlideshow trims={props}/>
+
         </div>
     )
 }
