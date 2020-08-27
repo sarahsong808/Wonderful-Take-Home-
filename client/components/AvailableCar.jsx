@@ -8,6 +8,7 @@ const AvailableCar = ({img, name, price}) => {
     const [carRequest, setCarRequest] = useState('')
     const [error, setError] = useState('');
 const [clickedRequest, setClickRequest] = useState('REQUEST QUOTE');
+const [requestButtonClicked, setRequestButtonClicked] = useState(false);
     //typically we'd be grabbing the unique id specified by the API but because i created the dummy data, I'm just using the name
 
 
@@ -26,13 +27,15 @@ const requestQuote = name => {
 setClickRequest('REQUESTED!')
 }
 
+const requestButtonClickedDisplay = requestButtonClicked === true ? 
+(<span className="checkmark">
+<div className="checkmark_circle"></div>
+<div className="checkmark_stem"></div>
+<div className="checkmark_kick"></div> 
+</span>) : null 
 return(
         <div className="available-car-container"> 
-            <span className="checkmark">
-            <div className="checkmark_circle"></div>
-            <div className="checkmark_stem"></div>
-            <div className="checkmark_kick"></div> 
-            </span>
+        { requestButtonClickedDisplay }
             <div>
                 <img width="100" src={img}/> 
             </div> 
@@ -43,7 +46,11 @@ return(
             <div>
                 STARTING AT ${price}
             </div>
-            <button className={clickedRequest === 'REQUESTED!' ? "requested" : ""} onClick={()=>requestQuote()}>
+            <button className={clickedRequest === 'REQUESTED!' ? "requested" : ""} onClick={
+            ()=>{
+                requestQuote();
+            setRequestButtonClicked(true);
+                }}>
                 {clickedRequest}
             </button>
             <div>

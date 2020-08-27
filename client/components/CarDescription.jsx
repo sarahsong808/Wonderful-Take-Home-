@@ -3,8 +3,7 @@ import styled from 'styled-components';
 
 const Wrapper = styled.div`
 background-color: black; 
-opacity: 0.9;
-height: 40vh; 
+opacity: 0.9; 
 width: 22%;
 color: white;
 font-style: light;
@@ -15,6 +14,9 @@ display: flex;
 flex-direction: column;
 justify-content: space-around;
 align-items: flex-start;
+position: absolute;
+top: 5px;
+    left: 20px;
 `;
 
 const CarTitle = styled.div`
@@ -40,12 +42,12 @@ height: 25px;
   border-radius: 50%;
   display: inline-block;
   `;
+
 const CarDescription = ({name, description}) => {
 
     
 
 return(
-    <div>
         <Wrapper>
             <Intro>
                 INTRODUCING THE NEW
@@ -60,7 +62,6 @@ return(
 <span class="dot"></span>
 <span class="dot"></span>
         </Wrapper>
-    </div>
 )
 }; 
 

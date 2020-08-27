@@ -7,6 +7,13 @@
 color: #676767;
 }
 
+.map-display {
+  width: 600px;
+}
+
+.map-availability {
+width: 300px;
+}
 body {
     background-color: #FFFFFF;
     font-family: 'Open Sans', sans-serif;
@@ -56,13 +63,11 @@ tbody {
     margin-bottom: 10%;
     max-width: 100%; 
     height: 70vh;
+    display: flex;
+    flex-direction: right;
+    justify-content: space-around;
 }
 
-.map-wrapper:after {
-  content: "";
-  display: table;
-  clear: both;
-};
  /* Get rid of blue outline around carousel */
 
 *:focus {
@@ -79,7 +84,13 @@ tbody {
     overflow: hidden;
   }
 
+.checkmark {
+  position: absolute;
+    top: 10px;
+    left: 40px;
+}
 
+.available-car-container
   .carousel .slider-wrapper {
     overflow: hidden;
     margin: auto;
@@ -270,8 +281,7 @@ padding: 110px 30px;
 }
 
 .available-car-container{
-  float: left;
-  padding: 10px;
+  position: relative;
 }
 
 .column {

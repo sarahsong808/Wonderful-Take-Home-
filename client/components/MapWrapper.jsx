@@ -16,13 +16,12 @@ return(
         <div id="headline">
         <img src="https://cdn.onlinewebfonts.com/svg/img_56607.png" width="20" height="20" /><h2>S E L E C T</h2><h2>  Y O U R  </h2> <h2> D E A L E R S H I P</h2></div>
         <p id="map-description">Using the map, below, click on the map marker that represents the nearest dealership to see all available LS trims</p>
-
 <div className='map-wrapper'>
-    <div className="column left">
+    <div className="map-display">
     <MapDisplay dealerships={dealerships} setSelectedDealer={setSelectedDealer} />
     </div>
-    <div className="column right">
-    <TrimAvailability selectedDealer={selectedDealer} trims={trims} dealerships={dealerships} />
+    <div className="trim-availability">
+    <TrimAvailability selectedDealer={selectedDealer} trims={trims} dealerships={dealerships}  />
     </div>
 </div>
 </div>

@@ -35,15 +35,15 @@ const TrimAvailability = ({selectedDealer, trims, dealerships}) => {
         <AvailableCar name={el} img={matchingImg[el]} price={matchingPrice[el]} key={idx} />
     ))
     return (
-            <div className='trim-availability'> 
+        <div>
             <Wrapper>
                 <h2> Availability for {dealerships[selectedDealer].name}:</h2>
            {eachTrim}
             </Wrapper>
-            <div>
+
         <button>CLEAR SELECTION</button>
-    </div>
-            </div>
+  
+        </div>
     )
 }
 

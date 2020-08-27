@@ -1,5 +1,4 @@
 import React, {useState} from 'react';
-import NavigationBar from './NavigationBar';
 import CarouselWrapper from './CarouselWrapper';
 import MapWrapper from './MapWrapper';
 
@@ -9,9 +8,6 @@ const LandingPage = props => {
 
     return (
         <div id="main-container">
-            <div>
-            <NavigationBar user={user}/>
-            </div>
             <div id="carousel-wrapper">
             <CarouselWrapper trims={trims}/>
             </div>
