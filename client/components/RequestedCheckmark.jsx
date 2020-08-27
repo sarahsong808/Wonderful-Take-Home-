@@ -8,7 +8,7 @@ left: 50%;
 width: 18px;
 height: 18px;
 background-color: #000;
-border: 2px solid #fff;
+border: 6px solid #fff;
 border-radius: 100%;
 user-select: none;
 transform: translate(-50%, -50%);
