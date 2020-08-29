@@ -1,30 +1,15 @@
-import React from 'React'; 
-import styled from 'styled-components';
+import React from 'React';
 
-const Checkmark = styled.div`
-position: absolute;
-top: 50%;
-left: 50%;
-width: 18px;
-height: 18px;
-background-color: #000;
-border: 6px solid #fff;
-border-radius: 100%;
-user-select: none;
-transform: translate(-50%, -50%);
-cursor: ${(props) => (props.onClick ? 'pointer' : 'default')};
-&:hover {
-  z-index: 1;
-}
-`;
+const RequestedCheckMark = props => {
+  return (
+    <div>
+      <span className="checkmark">
+        <div className="checkmark_circle"></div>
+        <div className="checkmark_stem"></div>
+        <div className="checkmark_kick"></div>
+      </span>
+    </div>
+  );
+};
 
-const RequestedCheckMark = props => { 
-
-return (
-<div>
-    <Checkmark/>
-</div>
-);
-}
-
-export default RequestedCheckMark; 
+export default RequestedCheckMark;
