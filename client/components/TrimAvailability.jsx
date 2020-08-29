@@ -8,7 +8,7 @@ import ls from '../assets/ls.jpg';
 const Wrapper = styled.div`
   width: 100%;
   position: relative;
-  height: 40vh;
+  height: 30vh;
 `;
 
 const TrimAvailability = ({ selectedDealer, trims, dealerships }) => {
