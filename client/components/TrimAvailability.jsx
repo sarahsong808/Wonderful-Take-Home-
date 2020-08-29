@@ -9,6 +9,7 @@ const Wrapper = styled.div`
 width: 100%;
 position: relative;
 margin-left: 35px;
+height: 40vh;
 `;
 
 
@@ -35,13 +36,13 @@ const TrimAvailability = ({selectedDealer, trims, dealerships}) => {
         <AvailableCar name={el} img={matchingImg[el]} price={matchingPrice[el]} key={idx} />
     ))
     return (
-        <div>
+        <div class="trim-avail-container">
             <Wrapper>
                 <h2> Availability for {dealerships[selectedDealer].name}:</h2>
            {eachTrim}
             </Wrapper>
 
-        <button>CLEAR SELECTION</button>
+        <button id="clear-selection">CLEAR SELECTION</button>
   
         </div>
     )
