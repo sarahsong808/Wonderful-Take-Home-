@@ -25,26 +25,30 @@ body {
 .request-quote {
   font-family: 'Open Sans', sans-serif;
   color: #ffffff;
-  padding: 8px;
+  padding: 9px;
   background-color: black;
   border-radius: 0;
-  width: 110px;
+  width: 113px;
   height: 20px;
   line-height: 0px;
   text-align: center;
-  font-size: 9px;
+  font-size: 8px;
+  letter-spacing: 2px;
+  font-weight: 600;
 }
 
 .requested {
   background-color: white;
   color: black;
-  padding: 8px;
-  width: 80px;
+  padding: 9px;
+  width: 84px;
   height: 20px;
   line-height: 0px;
   text-align: center;
-  font-size: 9px;
+  font-size: 8px;
   font-family: 'Open Sans', sans-serif;
+  letter-spacing: 2px;
+  font-weight: 600;
 }
 
 #clear-selection {
@@ -58,6 +62,8 @@ body {
   line-height: 0px;
   text-align: center;
   font-size: 18px;
+  letter-spacing: 3px;
+  font-weight: 100;
 }
 
 tbody {
@@ -281,10 +287,11 @@ car-carousel {
 }
 
 #headline {
-  max-width: 60%;
+  max-width: 42%;
   display: flex;
   justify-content: space-around;
   align-items: center;
+  height: 3vh;
 }
 
 .checkmark {
@@ -347,11 +354,16 @@ car-carousel {
 }
 
 .car-info-with-button {
-  font-size: 13px;
+  font-size: 10px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   height: 9vh;
+  letter-spacing: 2px;
+}
+
+.available-car-name {
+  font-weight: 600;
 }
 
 .available-car-image {
@@ -360,4 +372,12 @@ car-carousel {
 
 h3 {
   margin: 10px;
+  font-weight: 300;
+}
+
+.select-dealership-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: auto;
 }
