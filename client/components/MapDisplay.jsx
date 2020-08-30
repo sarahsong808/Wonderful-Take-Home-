@@ -20,7 +20,7 @@ const MapDisplay = ({ dealerships, setSelectedDealer }) => {
 
   return (
     // Important! Always set the container height explicitly
-    <div style={{ height: '70vh', width: '60%' }}>
+    <div className="map-display" style={{ height: '70vh', width: '100%' }}>
       <GoogleMapReact
         // bootstrapURLKeys={{ key: /* YOUR KEY HERE IF NOT USING DEVELOPMENT USE*/ }}
         defaultCenter={center}

@@ -29,13 +29,14 @@ const MapWrapper = props => {
           width="20"
           height="20"
         />
-        <h2>S E L E C T</h2>
-        <h2> Y O U R </h2> <h2> D E A L E R S H I P</h2>
+        <h2>SELECT YOUR DEALERSHIP</h2>
       </div>
-      <p id="map-description">
-        Using the map, below, click on the map marker that represents the
-        nearest dealership to see all available LS trims
-      </p>
+      <div>
+        <p id="map-description">
+          Using the map, below, click on the map marker that represents the
+          nearest dealership to see all available LS trims
+        </p>
+      </div>
       <div className="map-wrapper">
         <div className="map-display">
           <MapDisplay

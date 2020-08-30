@@ -5,9 +5,13 @@
   font-family: 'Open Sans', sans-serif;
   color: #676767;
 }
+h2 {
+  letter-spacing: 6px;
+  font-weight: 600;
+}
 
 .map-display {
-  width: 600px;
+  width: 800px;
 }
 
 .map-availability {
@@ -21,26 +25,39 @@ body {
 .request-quote {
   font-family: 'Open Sans', sans-serif;
   color: #ffffff;
-  padding: 10px;
+  padding: 8px;
   background-color: black;
   border-radius: 0;
-  width: 140px;
-  height: 30px;
-  line-height: 10px;
+  width: 110px;
+  height: 20px;
+  line-height: 0px;
   text-align: center;
+  font-size: 9px;
+}
+
+.requested {
+  background-color: white;
+  color: black;
+  padding: 8px;
+  width: 80px;
+  height: 20px;
+  line-height: 0px;
+  text-align: center;
+  font-size: 9px;
+  font-family: 'Open Sans', sans-serif;
 }
 
 #clear-selection {
   font-family: 'Open Sans', sans-serif;
   color: #ffffff;
-  padding: 30px;
+  padding: 20px;
   background-color: black;
   border-radius: 0;
   width: 100%;
-  height: 10px;
+  height: 5px;
   line-height: 0px;
   text-align: center;
-  font-size: 25px;
+  font-size: 18px;
 }
 
 tbody {
@@ -81,8 +98,8 @@ tbody {
   max-width: 100%;
   height: 70vh;
   display: flex;
-  flex-direction: right;
-  justify-content: space-around;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Get rid of blue outline around carousel */
@@ -108,11 +125,12 @@ tbody {
 }
 
 .trim-avail-container {
-  padding: 15px;
+  padding-left: 20px;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
   align-content: center;
+  justify-content: space-between;
+  height: 71vh;
 }
 
 .available-car-container .carousel .slider-wrapper {
@@ -263,9 +281,9 @@ car-carousel {
 }
 
 #headline {
-  max-width: 36%;
+  max-width: 60%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 }
 
@@ -276,16 +294,16 @@ car-carousel {
   -ms-transform: rotate(45deg); /* IE 9 */
   -webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
   transform: rotate(45deg);
-  top: 35px;
-  left: 38px;
+  top: 18px;
+  left: 25px;
 }
 
 .checkmark_circle {
   position: absolute;
-  width: 42px;
-  height: 42px;
+  width: 40px;
+  height: 40px;
   background-color: #59a340;
-  border-radius: 31px;
+  border-radius: 28px;
 }
 
 .checkmark_stem {
@@ -310,7 +328,7 @@ car-carousel {
   position: relative;
   display: flex;
   justify-content: space-around;
-  height: 6vh;
+  height: 11vh;
   align-items: center;
   width: 80%;
 }
@@ -328,24 +346,18 @@ car-carousel {
   width: 25%;
 }
 
-.requested {
-  background-color: white;
-  color: black;
-  padding: 10px;
-  width: 140px;
-  height: 30px;
-  line-height: 10px;
-  text-align: center;
-  font-family: 'Open Sans', sans-serif;
-}
-
 .car-info-with-button {
+  font-size: 13px;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  height: 5vh;
+  justify-content: space-between;
+  height: 9vh;
 }
 
 .available-car-image {
   margin: auto;
+}
+
+h3 {
+  margin: 10px;
 }

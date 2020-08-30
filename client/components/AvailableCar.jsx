@@ -34,7 +34,7 @@ const AvailableCar = ({ img, name, price }) => {
       <div className="available-car-container">
         {requestButtonClickedDisplay}
         <div className="available-car-image">
-          <img width="120" src={img} />
+          <img width="100" src={img} />
         </div>
         <div className="car-info-with-button">
           <div>{name}</div>
@@ -53,7 +53,7 @@ const AvailableCar = ({ img, name, price }) => {
           </button>
         </div>
       </div>
-      <div>____________________________________________________</div>
+      <div>___________________________________________</div>
     </div>
   );
 };

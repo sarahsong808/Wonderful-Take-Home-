@@ -1,15 +1,8 @@
 import React from 'react';
-import styled from 'styled-components';
 import AvailableCar from './AvailableCar';
 import sport from '../assets/ls-f-sport.jpg';
 import hybrid from '../assets/ls-hybrid.jpg';
 import ls from '../assets/ls.jpg';
-
-const Wrapper = styled.div`
-  width: 100%;
-  position: relative;
-  height: 30vh;
-`;
 
 const TrimAvailability = ({ selectedDealer, trims, dealerships }) => {
   //typically fetch this information in a useEffect hooks but hardcoded it here
@@ -38,11 +31,10 @@ const TrimAvailability = ({ selectedDealer, trims, dealerships }) => {
   ));
   return (
     <div className="trim-avail-container">
-      <Wrapper>
-        <h2> Availability for {dealerships[selectedDealer].name}:</h2>
+      <div>
+        <h3> Availability for {dealerships[selectedDealer].name}:</h3>
         {eachTrim}
-      </Wrapper>
-
+      </div>
       <button id="clear-selection">CLEAR SELECTION</button>
     </div>
   );
