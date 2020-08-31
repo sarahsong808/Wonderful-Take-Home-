@@ -1,14 +1,14 @@
-import React, {useState} from 'React';
+import React, { useState } from 'React';
 
 const User = props => {
-
-    return(
-        <div>
-            Richard Montgomery
-            <div className='initial-circle'>RM</div>
-        </div>
-    )
-
-}
+  return (
+    <div className="user-container">
+      <div className="username">Richard Montgomery</div>
+      <div className="initial-circle">
+        <div className="initials">RM</div>
+      </div>
+    </div>
+  );
+};
 
 export default User;

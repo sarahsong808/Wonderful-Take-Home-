@@ -5,10 +5,10 @@ import MapPin from './MapPin';
 
 // const TrimAvailability = ({ text }) => <div>{text}</div>;
 //typically we'd use an api for asking permissions for current location and passing in the lat and lng to set to dealerships closest to you within a decided mile radius
-const MapDisplay = ({ dealerships, setSelectedDealer }) => {
+const MapDisplay = ({ dealerships, setSelectedDealer, selectedDealer }) => {
   const [center, setCenter] = useState({ lat: 40.73061, lng: -73.935242 });
   const [zoom, setZoom] = useState(10);
-  const [selectPin, setSelectPin] = useState('./black-pin.png');
+  const [toggled, setToggled] = useState(0);
 
   const pins = dealerships.map(data => (
     <MapPin
@@ -17,16 +17,18 @@ const MapDisplay = ({ dealerships, setSelectedDealer }) => {
       lng={data.long}
       onClick={() => {
         setSelectedDealer(data.id);
-        setSelectPin('../assets/red-pin.png');
+        setToggled(data.id);
       }}
       key={data.id}
-      selectPin={selectPin}
+      toggled={data.id === toggled}
+      selectedDealer={selectedDealer}
+      dealerships={dealerships}
     />
   ));
 
   return (
     // Important! Always set the container height explicitly
-    <div className="map-display" style={{ height: '70vh', width: '100%' }}>
+    <div className="map-display">
       <GoogleMapReact
         // bootstrapURLKeys={{ key: /* YOUR KEY HERE IF NOT USING DEVELOPMENT USE*/ }}
         defaultCenter={center}

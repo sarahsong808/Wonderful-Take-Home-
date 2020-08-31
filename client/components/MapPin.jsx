@@ -1,6 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
+import blackpin from '../assets/black-pin.png';
+import redpin from '../assets/red-pin.png';
 
 // background-color: ${props => (props.onClick ? '#000' : 'red')};
 
@@ -18,15 +20,11 @@ const Wrapper = styled.div`
   }
 `;
 
-const MapPin = ({ name, onClick, selectPin }) => {
+const MapPin = ({ name, onClick, toggled, selectedDealer, dealerships }) => {
   return (
     <div>
       <Wrapper text={name} onClick={onClick}>
-        <img
-          src={require('../assets/black-pin.png')}
-          width="25px"
-          height="25px"
-        />
+        <img src={toggled ? redpin : blackpin} width="25px" height="25px" />
       </Wrapper>
     </div>
   );

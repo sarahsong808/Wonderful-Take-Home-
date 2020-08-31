@@ -22,7 +22,7 @@ const TrimAvailability = ({ selectedDealer, trims, dealerships }) => {
 
   const selectedTrims = trims[selectedDealer];
   const eachTrim = selectedTrims.map((el, idx) =>
-    el.length >= 1 ? (
+    el !== 'None Available' ? (
       <AvailableCar
         name={el}
         img={matchingImg[el]}
@@ -30,9 +30,11 @@ const TrimAvailability = ({ selectedDealer, trims, dealerships }) => {
         key={idx}
       />
     ) : (
-      'No Trims Available'
+     <div> <h4 className="no-trims">No Trims available</h4><div>___________________________________________</div>
+</div>
     )
   );
+
   return (
     <div className="trim-avail-container">
       <div>

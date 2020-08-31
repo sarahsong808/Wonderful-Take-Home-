@@ -1,22 +1,27 @@
 import React from 'react';
 import logo from '../assets/Lexus.png';
 import User from './User';
-import { BrowserRouter as Router, Link } from 'react-router-dom';
-
+// import { BrowserRouter as Router, Link } from 'react-router-dom';
+//i'd use router but i'm setting up navigation bar with a tags for this case
 const NavigationBar = props => {
   return (
     <header className="nav-container">
-      <div className="nav-bar">
-        <div>
-          <img src={logo} alt="lexus logo" height="80" />
-          <Link to="/">HOME</Link>
-          <Link to="/about">ABOUT</Link>
-          <Link to="/contact">CONTACT</Link>
-        </div>
-        <div>
-          <User />
-        </div>
-      </div>
+      <ul className="nav-bar">
+        <li className="nav-item">
+          <img src={logo} alt="lexus logo" height="75vh" />
+        </li>
+        <li className="nav-item">
+          <a href="/">HOME</a>
+        </li>
+        <li className="nav-item">
+          <a href="/about">ABOUT</a>
+        </li>
+        <li className="nav-item">
+          <a href="/contact">CONTACT</a>
+        </li>
+      </ul>
+
+      <User />
     </header>
   );
 };

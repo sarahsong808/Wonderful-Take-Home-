@@ -13,7 +13,7 @@ const MapWrapper = props => {
     0: ['2020 LS HYBRID', '2020 LS F SPORT', '2020 LS'],
     1: ['2020 LS HYBRID', '2020 LS'],
     2: ['2020 LS F SPORT'],
-    3: ['No Trims Available'],
+    3: ['None Available'],
   };
 
   const dealerships = [
@@ -33,16 +33,15 @@ const MapWrapper = props => {
         />
         <h2>SELECT YOUR DEALERSHIP</h2>
       </div>
-      <div>
         <p id="map-description">
           Using the map, below, click on the map marker that represents the
           nearest dealership to see all available LS trims
         </p>
-      </div>
       <div className="map-wrapper">
         <div className="map-display">
           <MapDisplay
             dealerships={dealerships}
+            selectedDealer={selectedDealer}
             setSelectedDealer={setSelectedDealer}
           />
         </div>
