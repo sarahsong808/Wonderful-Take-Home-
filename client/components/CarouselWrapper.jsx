@@ -4,12 +4,12 @@ import CarDescription from './CarDescription';
 
 const CarouselWrapper = ({ trims }) => {
   //I'd be pulling from data preferably with graphql to make a request only for these queries
-  // console.log('props in carouselwrapper', props)
+  // console.log('props in carouselwrapper', trims);
 
   return (
     <div>
       <CarSlideshow trims={trims} />
-      <CarDescription />
+      <CarDescription trims={trims} />
     </div>
   );
 };
