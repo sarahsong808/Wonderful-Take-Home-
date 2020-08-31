@@ -7,7 +7,8 @@ const MapWrapper = props => {
   //selected dealer is automatically on brooklyn
   const [trimData, setTrimData] = useState({});
   const [selectedDealer, setSelectedDealer] = useState(0);
-  
+  const [toggled, setToggled] = useState(0);
+
   //typically useEffect with fetcth for this data
   const trims = {
     0: ['2020 LS HYBRID', '2020 LS F SPORT', '2020 LS'],
@@ -33,16 +34,18 @@ const MapWrapper = props => {
         />
         <h2>SELECT YOUR DEALERSHIP</h2>
       </div>
-        <p id="map-description">
-          Using the map, below, click on the map marker that represents the
-          nearest dealership to see all available LS trims
-        </p>
+      <p id="map-description">
+        Using the map, below, click on the map marker that represents the
+        nearest dealership to see all available LS trims
+      </p>
       <div className="map-wrapper">
         <div className="map-display">
           <MapDisplay
             dealerships={dealerships}
             selectedDealer={selectedDealer}
             setSelectedDealer={setSelectedDealer}
+            setToggled={setToggled}
+            toggled={toggled}
           />
         </div>
         <div className="trim-availability">
@@ -50,6 +53,8 @@ const MapWrapper = props => {
             selectedDealer={selectedDealer}
             trims={trims}
             dealerships={dealerships}
+            setSelectedDealer={setSelectedDealer}
+            setToggled={setToggled}
           />
         </div>
       </div>

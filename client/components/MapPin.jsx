@@ -20,7 +20,7 @@ const Wrapper = styled.div`
   }
 `;
 
-const MapPin = ({ name, onClick, toggled, selectedDealer, dealerships }) => {
+const MapPin = ({ name, onClick, toggled }) => {
   return (
     <div>
       <Wrapper text={name} onClick={onClick}>

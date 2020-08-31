@@ -5,12 +5,11 @@ import MapPin from './MapPin';
 
 // const TrimAvailability = ({ text }) => <div>{text}</div>;
 //typically we'd use an api for asking permissions for current location and passing in the lat and lng to set to dealerships closest to you within a decided mile radius
-const MapDisplay = ({ dealerships, setSelectedDealer, selectedDealer }) => {
+const MapDisplay = ({ dealerships, setSelectedDealer, selectedDealer, toggled, setToggled }) => {
   const [center, setCenter] = useState({ lat: 40.73061, lng: -73.935242 });
   const [zoom, setZoom] = useState(10);
-  const [toggled, setToggled] = useState(0);
 
-  const pins = dealerships.map(data => (
+  const pins = dealerships.map((data, idx) => (
     <MapPin
       name={data.name}
       lat={data.lat}
@@ -23,6 +22,7 @@ const MapDisplay = ({ dealerships, setSelectedDealer, selectedDealer }) => {
       toggled={data.id === toggled}
       selectedDealer={selectedDealer}
       dealerships={dealerships}
+      key={idx}
     />
   ));
 

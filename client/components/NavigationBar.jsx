@@ -8,7 +8,12 @@ const NavigationBar = props => {
     <header className="nav-container">
       <ul className="nav-bar">
         <li className="nav-item">
-          <img src={logo} alt="lexus logo" height="75vh" />
+          <img
+            src={logo}
+            alt="lexus logo"
+            height="75vh"
+            className="lexus-logo"
+          />
         </li>
         <li className="nav-item">
           <a href="/">HOME</a>

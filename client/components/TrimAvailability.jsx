@@ -4,7 +4,13 @@ import sport from '../assets/ls-f-sport.jpg';
 import hybrid from '../assets/ls-hybrid.jpg';
 import ls from '../assets/ls.jpg';
 
-const TrimAvailability = ({ selectedDealer, trims, dealerships }) => {
+const TrimAvailability = ({
+  selectedDealer,
+  trims,
+  dealerships,
+  setSelectedDealer,
+  setToggled,
+}) => {
   //typically fetch this information in a useEffect hooks but hardcoded it here
   const matchingImg = {
     '2020 LS': ls,
@@ -30,8 +36,11 @@ const TrimAvailability = ({ selectedDealer, trims, dealerships }) => {
         key={idx}
       />
     ) : (
-     <div> <h4 className="no-trims">No Trims available</h4><div>___________________________________________</div>
-</div>
+      <div>
+        {' '}
+        <h4 className="no-trims">No Trims available</h4>
+        <div>___________________________________________</div>
+      </div>
     )
   );
 
@@ -41,7 +50,15 @@ const TrimAvailability = ({ selectedDealer, trims, dealerships }) => {
         <h3> Availability for {dealerships[selectedDealer].name}:</h3>
         {eachTrim}
       </div>
-      <button id="clear-selection">CLEAR SELECTION</button>
+      <button
+        id="clear-selection"
+        onClick={() => {
+          setSelectedDealer(0);
+          setToggled(0);
+        }}
+      >
+        CLEAR SELECTION
+      </button>
     </div>
   );
 };
