@@ -16,10 +16,10 @@ const CarSlideshow = ({ trims }) => {
       showThumbs={false}
       swipeable={true}
       emulateTouch={true}
-      centerMode={true}
     >
       <div>
         <img src={sport} />
+  
         <p className="car-type"> 2020 LS F SPORT</p>
         <p className="carousel-start-price">STARTING AT $81,450</p>
       </div>

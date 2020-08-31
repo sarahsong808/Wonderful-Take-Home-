@@ -13,6 +13,8 @@ h2 {
 
 .carousel-start-price {
   font-weight: 300;
+  font-size: 13px;
+  margin-block-start: 0em;
 }
 
 .map-display {
@@ -129,7 +131,10 @@ tbody {
 
 .car-type {
   font-weight: bold;
+  font-size: 18px;
+  margin-block-end: 0em;
 }
+
 .map-wrapper {
   margin-bottom: 10%;
   max-width: 100%;
@@ -211,7 +216,7 @@ tbody {
   padding: 0;
   position: relative;
   list-style: none;
-  width: 80%;
+  width: 60%;
 }
 .carousel .slider.animated {
   -webkit-transition: all 0.35s ease-in-out;
@@ -226,11 +231,13 @@ tbody {
   position: relative;
   text-align: center;
 }
+
 .carousel .slide img {
-  width: 100%;
+  width: 110%;
   vertical-align: top;
   border: 0;
 }
+
 .carousel .slide iframe {
   display: inline-block;
   width: calc(100% - 80px);

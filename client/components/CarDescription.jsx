@@ -15,9 +15,9 @@ const Wrapper = styled.div`
   justify-content: space-around;
   align-items: flex-start;
   position: absolute;
-  top: 150px;
-  left: 105px;
-  height: 40vh;
+  top: 180px;
+  left: 140px;
+  height: 42vh;
 `;
 
 const CarTitle = styled.div`
