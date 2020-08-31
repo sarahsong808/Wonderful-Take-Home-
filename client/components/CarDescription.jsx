@@ -4,7 +4,7 @@ import styled from 'styled-components';
 const Wrapper = styled.div`
   background-color: black;
   opacity: 0.9;
-  width: 22%;
+  width: 21%;
   color: white;
   font-style: light;
   font-weight: 300;
@@ -15,8 +15,9 @@ const Wrapper = styled.div`
   justify-content: space-around;
   align-items: flex-start;
   position: absolute;
-  top: 5px;
-  left: 20px;
+  top: 150px;
+  left: 105px;
+  height: 40vh;
 `;
 
 const CarTitle = styled.div`

@@ -6,8 +6,8 @@ const MapWrapper = props => {
   //array of objects with name, trims, name of trims (id), lat, long, id of dealership location
   //selected dealer is automatically on brooklyn
   const [trimData, setTrimData] = useState({});
-  const [selectedDealer, setSelectedDealer] = useState(0);
-  const [toggled, setToggled] = useState(0);
+  const [selectedDealer, setSelectedDealer] = useState(Number);
+  const [toggled, setToggled] = useState(Number);
 
   //typically useEffect with fetcth for this data
   const trims = {

@@ -9,6 +9,7 @@ const CarouselWrapper = ({ trims }) => {
   return (
     <div>
       <CarSlideshow trims={trims} />
+      <CarDescription />
     </div>
   );
 };
