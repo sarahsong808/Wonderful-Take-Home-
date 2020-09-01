@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import CarouselWrapper from './CarouselWrapper';
 import MapWrapper from './MapWrapper';
 
-const LandingPage = props => {
+const LandingPage = () => {
   const trimsInfo = [
     {
       name: '2020 LS F SPORT',
@@ -19,6 +19,7 @@ const LandingPage = props => {
     },
     { name: '2020 LS', img: '../assets/ls.jpg', start: '$75,450' },
   ];
+  //setting up user
   const [user, setUser] = useState('');
 
   return (

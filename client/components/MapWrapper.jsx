@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import MapDisplay from './MapDisplay';
 import TrimAvailability from './TrimAvailability';
 
-const MapWrapper = props => {
+const MapWrapper = () => {
   //array of objects with name, trims, name of trims (id), lat, long, id of dealership location
   //selected dealer is automatically on brooklyn
   const [trimData, setTrimData] = useState({});

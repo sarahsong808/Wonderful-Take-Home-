@@ -4,8 +4,6 @@ import PropTypes from 'prop-types';
 import blackpin from '../assets/black-pin.png';
 import redpin from '../assets/red-pin.png';
 
-// background-color: ${props => (props.onClick ? '#000' : 'red')};
-
 const Wrapper = styled.div`
   position: absolute;
   top: 50%;

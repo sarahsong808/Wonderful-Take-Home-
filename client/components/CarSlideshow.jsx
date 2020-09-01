@@ -4,7 +4,7 @@ import hybrid from '../assets/ls-hybrid.jpg';
 import ls from '../assets/ls.jpg';
 import { Carousel } from 'react-responsive-carousel';
 
-const CarSlideshow = ({ trims }) => {
+const CarSlideshow = () => {
   return (
     <Carousel
       showArrows={false}
@@ -18,7 +18,6 @@ const CarSlideshow = ({ trims }) => {
     >
       <div>
         <img src={sport} />
-  
         <p className="car-type"> 2020 LS F SPORT</p>
         <p className="carousel-start-price">STARTING AT $81,450</p>
       </div>

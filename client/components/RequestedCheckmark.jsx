@@ -1,6 +1,6 @@
 import React from 'React';
 
-const RequestedCheckMark = props => {
+const RequestedCheckMark = () => {
   return (
     <div>
       <span className="checkmark">
