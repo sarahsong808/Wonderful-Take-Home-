@@ -1,4 +1,4 @@
-import React from 'React';
+import React from 'react';
 
 const User = props => {
   const username = { firstName: 'Richard', lastName: 'Montgomery' };
