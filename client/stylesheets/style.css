@@ -469,7 +469,12 @@ h3 {
   margin-top: 30px;
 }
 
-@media only screen and (max-width: 768px) {
+.menu-container {
+  display: none;
+}
+
+/* mobile view */
+@media only screen and (max-width: 500px) {
   .dot1,
   .dot2,
   .dot3 {
@@ -504,6 +509,7 @@ h3 {
   }
   #carousel-wrapper {
     height: 30vh;
+    padding: 70px 0px 110px 0px;
   }
   .trim-avail-container {
     height: 55vh;
@@ -525,7 +531,7 @@ h3 {
   }
 
   #headline {
-    max-width: 85%;
+    max-width: 80%;
     height: 0vh;
     margin-top: 15px;
   }
@@ -552,23 +558,49 @@ h3 {
     height: 88vh;
   }
   .nav-container {
+    display: none;
+  }
+
+  .menu-container {
     display: flex;
-    justify-content: space-between;
-    max-width: 85%;
+    flex-direction: column;
+    justify-content: flex-start;
+    max-width: 100%;
     margin: auto;
     padding-top: 15px;
   }
 
-  .nav-bar {
+  .menu-toggle-list {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-start;
+    text-align: center;
     width: 100%;
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
     font-size: 12px;
-    margin-block-start: 0%;
+    border-top: solid;
+    list-style-type: none;
+    border-width: thin;
+    background-color: rgba(0, 0, 0, 0.904);
+  }
+
+  .menu-toggle-item a {
+    color: white;
+  }
+
+  .menu-toggle-item {
+    width: 100%;
+    border-bottom: solid;
+    border-width: thin;
+    padding: 4px;
+  }
+
+  .menu-toggle-item:hover {
+    background-color: white;
+  }
+
+  .menu-toggle-item a:hover {
+    color: black;
   }
 
   .user-container {
@@ -578,7 +610,7 @@ h3 {
   .toggle-button {
     position: absolute;
     top: 1.8rem;
-    right: 2rem;
+    right: 1.5rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -594,38 +626,83 @@ h3 {
   }
 }
 
-@media only screen and (max-width: 770px, min-width 700px) {
-  #headline {
-    max-width: 70%;
-  }
-  .trim-avail-container {
-    height: 55vh;
-    padding-left: 0px;
+/* responsive view */
+@media only screen and (max-width: 768px) {
+  .nav-container {
+    display: none;
   }
 
-  .map-display {
-    height: 55vh;
+  .menu-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    max-width: 100%;
+    margin: auto;
+    padding-top: 15px;
   }
 
-  .map-wrapper {
-    height: 55vh;
+  .menu-toggle-list {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 12px;
+    border-top: solid;
+    list-style-type: none;
+    border-width: thin;
+    background-color: rgba(0, 0, 0, 0.904);
+  }
+
+  .menu-toggle-item a {
+    color: white;
+  }
+
+  .menu-toggle-item {
+    width: 100%;
+    border-bottom: solid;
+    border-width: thin;
+    padding: 10px 0px;
+  }
+
+  .menu-toggle-item a:hover {
+    color: gray;
+  }
+
+  .user-container {
+    display: none;
+  }
+
+  .toggle-button {
+    position: absolute;
+    top: 1.8rem;
+    right: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 31px;
+    height: 21px;
+  }
+
+  .bar {
+    height: 3px;
+    width: 100%;
+    background-color: rgb(20, 20, 20);
+    border-radius: 10px;
+  }
+
+  .select-dealership-wrapper {
+    width: 95%;
+  }
+
+  .dot1,
+  .dot2,
+  .dot3 {
+    height: 10px;
+    width: 10px;
   }
 }
-
-/* @media only screen and (max-width: 960px) {
-  .map-wrapper {
-    margin-left: 0px;
-  }
-  #headline {
-    max-width: 46%;
-    margin-left: 0px;
-    margin-top: 25px;
-  }
-  #map-description {
-    margin-left: 0px;
-    margin-bottom: 50px;
-  } */
-/* } */
 
 body {
   padding: 0;
