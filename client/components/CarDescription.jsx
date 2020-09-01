@@ -18,7 +18,7 @@ const Wrapper = styled.div`
   top: 160px;
   left: 110px;
   height: 36vh;
-  @media only screen and (max-width: 730px) {
+  @media only screen and (max-width: 768px) {
     height: 15vh;
     width: 75%;
     left: 10%;
@@ -32,7 +32,7 @@ const CarTitle = styled.div`
   font-size: 35px;
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
-  @media only screen and (max-width: 730px) {
+  @media only screen and (max-width: 768px) {
     font-size: 11px;
   }
 `;
@@ -41,7 +41,7 @@ const CarSummary = styled.div`
   font-size: 12px;
   font-weight: 300;
   width: 100%;
-  @media only screen and (max-width: 730px) {
+  @media only screen and (max-width: 768px) {
     font-size: 8px;
   }
 `;
@@ -50,7 +50,7 @@ const Intro = styled.div`
   font-size: 13px;
   font-weight: 300;
   margin-block-end: 2px;
-  @media only screen and (max-width: 730px) {
+  @media only screen and (max-width: 768px) {
     font-size: 7px;
   }
 `;
@@ -59,7 +59,7 @@ const DotToggle = styled.div`
   flex-direction: row;
   justify-content: space-between;
   width: 25%;
-  @media only screen and (max-width: 737px) {
+  @media only screen and (max-width: 768px) {
     width: 18%;
   }
 `;
