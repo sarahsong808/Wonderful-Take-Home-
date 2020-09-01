@@ -1,6 +1,8 @@
 import React from 'react';
 import logo from '../assets/Lexus.png';
 import User from './User';
+// import Menu from './Menu';
+
 // import { BrowserRouter as Router, Link } from 'react-router-dom';
 //i'd use router but i'm setting up navigation bar with a tags for this case
 const NavigationBar = props => {
@@ -15,6 +17,12 @@ const NavigationBar = props => {
             className="lexus-logo"
           />
         </li>
+
+        <a href="#" className="toggle-button">
+        <span className="bar" />
+        <span className="bar" />
+        <span className="bar" />
+        </a>
         <li className="nav-item">
           <a href="/">HOME</a>
         </li>
@@ -23,6 +31,9 @@ const NavigationBar = props => {
         </li>
         <li className="nav-item">
           <a href="/contact">CONTACT</a>
+        </li>
+        <li className="nav-item-account">
+          <a href="#">MY ACCOUNT</a>
         </li>
       </ul>
 

@@ -89,11 +89,18 @@ tbody {
   width: 10%;
 }
 
-.dot {
+.dot1,
+.dot2,
+.dot3 {
   height: 15px;
   width: 15px;
-  background-color: #bbb;
+  background-color: black;
   border-radius: 50%;
+  border: 1px solid white;
+}
+
+.dot1 {
+  background-color: white;
 }
 
 .nav-container {
@@ -319,8 +326,17 @@ car-carousel {
   content: '>';
 }
 
+.nav-item-account {
+  display: none;
+}
+
+#main-container {
+  width: 100%;
+}
+
 #carousel-wrapper {
   padding: 110px 0px;
+  width: 100%;
 }
 
 #headline {
@@ -454,10 +470,31 @@ h3 {
 }
 
 @media only screen and (max-width: 737px) {
+  .dot1,
+  .dot2,
+  .dot3 {
+    height: 8px;
+    width: 8px;
+    background-color: black;
+    border-radius: 50%;
+    border: 1px solid white;
+  }
+
+  .dot1 {
+    background-color: white;
+  }
+  .lexus-logo {
+    margin: 0.5rem;
+    height: 5px;
+  }
+
+  .nav-item-account {
+    display: contents;
+  }
+
   .map-wrapper {
     display: flex;
     flex-direction: column;
-    margin-left: 38px;
   }
 
   .map-display {
@@ -468,7 +505,14 @@ h3 {
     height: 30vh;
   }
   .trim-avail-container {
-    height: 53vh;
+    height: 55vh;
+    padding-left: 0px;
+  }
+  .car-type {
+    font-size: 13px;
+  }
+  .carousel-start-price {
+    font-size: 10px;
   }
 
   #clear-selection {
@@ -480,7 +524,6 @@ h3 {
   #headline {
     max-width: 85%;
     height: 0vh;
-    margin-left: 30px;
     margin-top: 15px;
   }
 
@@ -495,8 +538,7 @@ h3 {
 
   #map-description {
     font-size: 11px;
-    margin-left: 38px;
-    margin-bottom: 26px;
+    margin-bottom: 30px;
   }
 
   .select-dealership-wrapper {
@@ -504,30 +546,52 @@ h3 {
     flex-direction: column;
     justify-content: space-between;
     width: 85%;
-    margin: auto;
     height: 88vh;
   }
   .nav-container {
     display: flex;
     justify-content: space-between;
-    max-width: 100%;
+    max-width: 80%;
     margin: auto;
     padding-top: 15px;
   }
 
   .nav-bar {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
-    align-items: center;
-    width: 35%;
+    align-items: flex-start;
+    width: 100%;
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
     font-size: 12px;
-    margin-left: -25px;
+    /* margin-left: -25px; */
+  }
+
+  .user-container {
+    display: none;
   }
 
   .lexus-logo {
     height: 8vh;
+  }
+
+  .toggle-button {
+    position: absolute;
+    top: 0.75rem;
+    right: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 31px;
+    height: 21px;
+  }
+
+  .bar {
+    height: 3px;
+    width: 100%;
+    background-color: rgb(20, 20, 20);
+    border-radius: 10px;
   }
 }
 
@@ -537,6 +601,7 @@ h3 {
   }
   .trim-avail-container {
     height: 55vh;
+    padding-left: 0px;
   }
 
   .map-display {

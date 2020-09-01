@@ -15,7 +15,6 @@ const CarSlideshow = ({ trims }) => {
       showIndicators={false}
       showThumbs={false}
       swipeable={true}
-      emulateTouch={true}
     >
       <div>
         <img src={sport} />
